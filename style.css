@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+  background-image: url("imagenes/fondo.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#title {
+  background-color: yellow;
+  height: 60px;
+  border-radius: 999px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+#quizForm {
+  background-color: red;
+  width: 100%;
+  max-width: 500px;
+  border: 5px solid black;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 100px;
+}
+
+h3 {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+#result {
+  background-color: aliceblue;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 100px;
+}
+
+#carImage {
+  margin: 20px auto;
+  background-color: aliceblue;
+  height: auto;
+  display: block;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 100px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #title {
+    font-size: 20px;
+  }
+
+  #quizForm {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  #result {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  #carImage {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #title {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  #quizForm {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  #result {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #carImage {
+    max-width: 200px;
+  }
+}

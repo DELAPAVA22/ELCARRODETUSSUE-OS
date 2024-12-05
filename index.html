@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz: ¿Qué auto deberías comprar?</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">¿Qué auto deberías comprar?</h1>
+    <form id="quizForm">
+      <!-- Pregunta 1 -->
+      <h3>1. ¿Cuál es el principal uso que le darás al auto?</h3>
+      <label
+        ><input type="radio" name="q1" value="A" /> Uso diario en la
+        ciudad</label
+      ><br />
+      <label
+        ><input type="radio" name="q1" value="B" /> Viajes largos y
+        carretera</label
+      ><br />
+      <label
+        ><input type="radio" name="q1" value="D" /> Aventuras y
+        todoterreno</label
+      ><br />
+      <label
+        ><input type="radio" name="q1" value="E" /> Conducir por diversión y
+        velocidad</label
+      ><br />
+
+      <!-- Pregunta 2 -->
+      <h3>2. ¿Cuántas personas usarán regularmente el auto?</h3>
+      <label><input type="radio" name="q2" value="A" /> 1-2 personas</label
+      ><br />
+      <label><input type="radio" name="q2" value="B" /> 3-4 personas</label
+      ><br />
+      <label><input type="radio" name="q2" value="C" /> 5 o más personas</label
+      ><br />
+      <label
+        ><input type="radio" name="q2" value="D" /> Varía, pero generalmente 2-3
+        personas</label
+      ><br />
+
+      <!-- Pregunta 3 -->
+      <h3>3. ¿Cuál es tu prioridad al elegir un auto?</h3>
+      <label
+        ><input type="radio" name="q3" value="B" /> Comodidad y espacio</label
+      ><br />
+      <label
+        ><input type="radio" name="q3" value="C" /> Seguridad y características
+        familiares</label
+      ><br />
+      <label
+        ><input type="radio" name="q3" value="D" /> Potencia y capacidad de
+        manejo en terrenos difíciles</label
+      ><br />
+      <label
+        ><input type="radio" name="q3" value="E" /> Rendimiento y
+        velocidad</label
+      ><br />
+
+      <!-- Pregunta 4 -->
+      <h3>4. ¿Qué estilo de auto prefieres?</h3>
+      <label
+        ><input type="radio" name="q4" value="A" /> Compacto y fácil de
+        manejar</label
+      ><br />
+      <label><input type="radio" name="q4" value="C" /> SUV espaciosa</label
+      ><br />
+      <label
+        ><input type="radio" name="q4" value="D" /> Vehículo todoterreno</label
+      ><br />
+      <label
+        ><input type="radio" name="q4" value="E" /> Deportivo y de alto
+        rendimiento</label
+      ><br />
+
+      <!-- Pregunta 5 -->
+      <h3>5. ¿Cuál es tu presupuesto para el auto?</h3>
+      <label><input type="radio" name="q5" value="A" /> Bajo</label><br />
+      <label><input type="radio" name="q5" value="B" /> Medio</label><br />
+      <label><input type="radio" name="q5" value="C" /> Alto</label><br />
+      <label><input type="radio" name="q5" value="E" /> Sin límite</label><br />
+
+      <button type="button" onclick="calculateResult()">Ver resultado</button>
+    </form>
+
+    <h2 id="result"></h2>
+    <img
+      id="carImage"
+      src=""
+      alt=""
+      style="display: none; max-width: 300px; margin-top: 10px"
+    />
+  </body>
+</html>
